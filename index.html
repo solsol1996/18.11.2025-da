@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <textarea cols="50" rows="10" placeholder="Tutaj wpisz tekst do analizy..." id="user-input"></textarea>
+    <br>
+    <button onclick="analyze()">Analizuj</button>
+
+    <p>liczba znaków: <span id="count-character"></span></p>
+    <p>liczba spacji: <span id="count-spaces"></span></p>
+    <p>liczba słów: <span id="count-words"></span></p>
+    <p>liczba zdań: <span id="count-zdania"></span></p>
+    <p>najdłuższe słowo w tekście: <span id="count-longest-word"></span></p>
+    <p>średnią długość słowa: <span id="count-srednia"></span></p>
+    <p>procent wielkich liter w tekście: <span id="count-procent"></span></p>
+    <p>czas czytania, zakładając 200 słów na minutę: <span id="count-text-time"></span></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

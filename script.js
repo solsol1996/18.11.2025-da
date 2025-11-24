@@ -17,29 +17,24 @@ function analyze() {
     const words = textTrimmed.split(" ")
 
     document.getElementById("count-words").innerText = words.length
-    document.getElementById("count-character").innerText = words.length
 
+    // liczba slow
     let spaceCounter = 0;
-    for (let i = 0; i < textTrimmed.length; i++) {
-        const character = textTrimmed.charAt(i);
-
+    for (let i = 0; i < text.length; i++) {
+        const character = text.charAt(i);
         if (character === ' ') {
             spaceCounter += 1
         }
     }
-
-    document.getElementById("count-character").innerText = spaceCounter
+    document.getElementById("count-space").innerText = spaceCounter
 
     let letterCounter = 0;
-
     for(let i = 0; i < textTrimmed.length; i++) {
         const letter = textTrimmed.charAt(i);
-
         if(letter !== ' ') {
             letterCounter += 1
         }
     }
-    document.getElementById("count-spaces").innerText = spaceCounter
 
     let zdaniaCounter = 0;
 

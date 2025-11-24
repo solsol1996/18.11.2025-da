@@ -28,13 +28,15 @@ function analyze() {
     }
     document.getElementById("count-space").innerText = spaceCounter
 
+    // liczy spacju
     let letterCounter = 0;
-    for(let i = 0; i < textTrimmed.length; i++) {
-        const letter = textTrimmed.charAt(i);
+    for(let i = 0; i < text.length; i++) {
+        const letter = text.charAt(i);
         if(letter !== ' ') {
-            letterCounter += 1
+            letterCounter += 1 
         }
     }
+    document.getElementById("count-spaces").innerText = letterCounter
 
     let zdaniaCounter = 0;
 
